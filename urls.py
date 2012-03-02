@@ -1,4 +1,4 @@
-from django.conf.urls.defaults import patterns, include, url
+from django.conf.urls.defaults import patterns, url
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -14,4 +14,7 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
+    url(r'^home/', 'Mostly_static_pages.Practica5.views.home'),
+    url(r'^contact/', 'Mostly_static_pages.Practica5.views.contact'),
+    url(r'^about/', 'Mostly_static_pages.Practica5.views.about'),
 )
