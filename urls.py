@@ -17,5 +17,7 @@ urlpatterns = patterns('',
     url(r'^home/$', 'Mostly_static_pages.Practica5.views.home'),
     url(r'^contact/', 'Mostly_static_pages.Practica5.views.contact'),
     url(r'^about/', 'Mostly_static_pages.Practica5.views.about'),
+    url(r'^help/', 'Mostly_static_pages.Practica5.views.help'),
+    url(r'^signup/', 'Mostly_static_pages.Practica5.views.signup'),
 
 )

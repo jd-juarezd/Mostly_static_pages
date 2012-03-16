@@ -2,11 +2,17 @@
 <html>
   <head>
     <title>Ruby on Rails Tutorial Sample App | {% block title %}{% endblock %}</title> 
-    <link rel="stylesheet" media="screen" href="{{ STATIC_URL }}blueprint/screen.css" type="text/css" >
+    {% include "stylesheets.html" %}
   </head>
   <body>
-    {% block content %}
+  	<div class="container">
+     {% include "header.html" %} 
+      <section class="round">
+        {% block content %}
     
-    {% endblock %} 
+    	{% endblock %}
+      </section>
+      {% include "footer.html" %} 
+    </div>
   </body>
 </html>

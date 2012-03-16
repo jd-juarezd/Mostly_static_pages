@@ -15,3 +15,11 @@ def contact(request):
 def about(request):
     
     return render_to_response('about.html', RequestContext(request))
+
+def help(request):
+    
+    return render_to_response('help.html', RequestContext(request))
+
+def signup(request):
+    
+    return render_to_response('signup.html', RequestContext(request))
